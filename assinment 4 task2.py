@@ -1,6 +1,6 @@
 file = open('output.txt','a+')
 first_data = input("Enter text to wirte in the file :"+"\n")
-file.write(first_data +"\n"*2)
+file.write(first_data +"\n")
 print("Data successfully writen in output.txt.\n")
 file.seek(0)
 
@@ -13,7 +13,7 @@ while True:
     a = int(input())
     if a == 1:
        data_append= input("Enter data to add in output.txt :  "+"\n")
-       file.write(data_append +"\n"*2)
+       file.write(data_append +"\n")
        file.seek(0)
        print("data successfully appended")
     else:
@@ -23,5 +23,6 @@ while True:
             print(line.strip())
 
         break
+
 
 file.close()
